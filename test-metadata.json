@@ -1,0 +1,15 @@
+{
+  "name": "Spongebob Squarepants",
+  "description": "another friendly creature of the sea.",
+  "image": "https://to.do.com/",
+  "attributes": [
+    {
+      "trait_type": "Size", 
+      "value": "small"
+    }, 
+    {
+      "trait_type": "Character", 
+      "value": "lulz"
+    } 
+  ]
+}

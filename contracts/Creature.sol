@@ -20,4 +20,16 @@ contract Creature is ERC721Tradable {
     function contractURI() public pure returns (string memory) {
         return "https://creatures-api.opensea.io/contract/opensea-creatures";
     }
+
+    /**
+   * @dev Returns an URI for a given token ID
+   */
+    function tokenURI(uint256 _tokenId) public view returns (string) {
+    return Strings.strConcat(
+        baseTokenURI(),
+        Strings.uint2str(_tokenId)
+    );
+  }
+
+
 }

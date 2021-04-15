@@ -12,6 +12,8 @@ const NUM_LOOTBOXES = 4;
 const DEFAULT_OPTION_ID = 0;
 const LOOTBOX_OPTION_ID = 2;
 
+console.log(MNEMONIC, NODE_API_KEY, OWNER_ADDRESS, NETWORK)
+
 if (!MNEMONIC || !NODE_API_KEY || !OWNER_ADDRESS || !NETWORK) {
   console.error(
     "Please set a mnemonic, Alchemy/Infura key, owner, network, and contract address."
