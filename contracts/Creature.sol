@@ -24,12 +24,11 @@ contract Creature is ERC721Tradable {
     /**
    * @dev Returns an URI for a given token ID
    */
-    function tokenURI(uint256 _tokenId) public view returns (string) {
-    return Strings.strConcat(
-        baseTokenURI(),
-        Strings.uint2str(_tokenId)
-    );
-  }
-
-
+    function tokenURI(uint256 _tokenId) public view returns (string memory) {
+    // return Strings.strConcat(
+    //     baseTokenURI(),
+    //     Strings.uint2str(_tokenId)
+    // );
+    return "https://raw.githubusercontent.com/ernopp/opensea-creatures/master/test-metadata.json";
+    }
 }
